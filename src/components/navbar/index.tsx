@@ -17,9 +17,9 @@ const NavBar: FC<IProps> = ({ bg }) => {
 
     const response = await fetch(URL, {
       method: 'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       cache: 'no-cache',
-      credentials: 'same-origin',
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json'
       },
